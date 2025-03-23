@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="play">
+        Play
+    </h1>
+
+    <h1 class="header">
+        Rock <img src="./rock.png" alt="" height="30px"> Paper <img src="./paper.png" alt="" height="50px"> Scissor <img src="./scissor.png" alt="" height="50px">
+    </h1>
+
+    <div class="score">
+        <p>Computer Score: <span class="computerSpan">0</span></p>
+        <p>Your Score: <span class="playerSpan">0</span></p>
+    </div>
+
+    <h1 class="display">
+
+    </h1>
+
+    <div class="computerChose">
+        <p>Computer Chose: <span class="computerChoseSpan"></span></p>
+    </div>
+
+    <div class="playerChose">
+        <button class="rock" onclick="fRock()">
+            <img src="./rock.png" alt="Rock" height="50px">
+        </button>
+
+        <button class="paper" onclick="fPaper()">
+            <img src="./paper.png" alt="Paper" height="50px">
+        </button>
+
+        <button class="scissor" onclick="fScissor()">
+            <img src="./scissor.png" alt="Scissor" height="50px">
+        </button>
+    </div>
+
+    <button class="confirm" onclick="confirmm()">
+        Confirm
+    </button>
+    <footer>
+        This website is the creation of Divas Pant. <a href="https://www.youtube.com/@divaspantnovid2780/" target="_blank">youtube link</a> <a href="https://www.github.com/divaspant-dev/" target="_blank">github link</a>
+    </footer>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

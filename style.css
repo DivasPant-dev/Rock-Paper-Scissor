@@ -1,0 +1,94 @@
+body {
+    height: 100vh;
+    margin: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.header > img {
+    translate: 0px 5px;
+}
+
+.playerChose {
+    display: flex;
+    gap: 50px;
+}
+
+.play {
+    margin-bottom: 0;
+}
+
+.header {
+    margin-top: 0;
+}
+
+.playerChose > button {
+    padding: 10px 10px;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.playerChose > button:hover {
+    box-shadow: 0px 0px 5px black;
+}
+
+.selected::after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    content: "Selected";
+    left: 0;
+    bottom: 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: green;
+}
+
+.confirm {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    background-color: darkorange;
+    cursor: pointer;
+    border: 2px solid red;
+    transition: all 0.5s;
+}
+
+.confirm:hover {
+    background-color: orange;
+    box-shadow: 0px 0px 10px orange;
+}
+
+footer {
+    display: flex;
+    gap: 40px;
+    color: green;
+}
+
+@media screen and (max-width: 450px){
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    body {
+        margin: 8px;
+        gap: 10px;
+    }
+
+    .play {
+        margin-top: 0;
+        font-size: 2rem;
+    }
+}
